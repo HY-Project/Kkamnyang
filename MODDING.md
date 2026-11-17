@@ -1,6 +1,6 @@
 # 깜냥 모딩 안내
 
-깜냥은 MOTP(HY Project #A-01)와 같은 모드 체계를 쓴다. 지금 게임 버전은 **`0.6.4`**이다.
+깜냥은 MOTP(HY Project #A-01)와 같은 모드 체계를 쓴다. 지금 게임 버전은 **`0.6.5`**이다.
 
 > 모드는 **설치판(HY 런처·zip)에서만** 읽힌다. 웹 버전에서는 모드를 쓸 수 없다.
 
@@ -39,7 +39,7 @@ Kkamnyang/
 ```
 
 - `id`는 `[A-Za-z0-9._-]`. 같은 `id`가 둘이면 둘 다 꺼진다.
-- `gameVersion` — `"0.6.x"` · `{ "min": "0.6.0", "max": "0.6.4" }` · `"*"`. 맞지 않으면 경고하고 그래도 싣는다.
+- `gameVersion` — `"0.6.x"` · `{ "min": "0.6.0", "max": "0.6.5" }` · `"*"`. 맞지 않으면 경고하고 그래도 싣는다.
 - `entry`·`capabilities`는 코드를 싣는 Advanced 모드만(8절).
 
 ## 3. 순서와 충돌
@@ -158,6 +158,9 @@ Kkamnyang/
 ## 7. 언어 더하기
 
 `mod.json`에 `languages`를 적고 `locales/<id>/*.json`을 싣는다. 빠진 글은 `fallback`(기본 `ko`)으로 떨어진다.
+
+판 안내(`stages`의 `tips`)와 편성 조언(`party`)은 터치 조작일 때 같은 이름 뒤에 `_touch`가 붙은 글을 먼저 찾는다(예: `"jump_touch"`).
+키 이름이 들어간 글만 터치 판을 따로 적으면 되고, 없으면 원래 글이 나온다(0.6.5~).
 
 ```json
 "languages": [ { "id": "en", "name": "English", "fallback": "ko", "fonts": { "ui": "myFont" } } ],
