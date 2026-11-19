@@ -8,7 +8,8 @@
       README.md ← 이 파일    MODDING.md ← docs/modding/MODDING.md    CHANGELOG.md ← docs/CHANGELOG.md
 
   버전 숫자는 **일부러 안 적었다** — 내려받기 링크가 `releases/latest`라 판을 올려도 이 문서는 낡지 않는다.
-  지금 나가는 벌은 **Windows x64 하나**다(로컬 `npm run build:desktop`, 2026-11-15 사용자 지시). 다른 벌이 나가면
+  지금 나가는 벌은 **Windows x64 · Linux x64 · Android(APK)** 셋이다(0.7.0, 2026-11-19 사용자 지시 — 모두 로컬에서 굽는다:
+  `npm run build:desktop` · `npm run build:desktop:linux:docker` · `npm run build:android`). 다른 벌이 나가면
   「플레이」 표와 사양 표를 같이 고친다.
 -->
 
@@ -33,20 +34,24 @@
 | | |
 |---|---|
 | **Windows x64** | [Releases](https://github.com/HY-Project/Kkamnyang/releases/latest)의 `Kkamnyang_<버전>_windows_x64.zip` — 풀어서 `Kkamnyang.exe`를 실행 |
-| **HY 런처용** | 같은 릴리스의 `Kkamnyang_<버전>_windows_x64.hyp` |
+| **Linux x64** | 같은 릴리스의 `Kkamnyang_<버전>_linux_x64.tar.gz` — 풀어서 `Kkamnyang`을 실행 |
+| **Android** | 같은 릴리스의 `Kkamnyang_<버전>_android.apk` — 휴대폰에서 받아 설치(「출처를 알 수 없는 앱」 허용이 필요합니다) |
+| **HY 런처용** | 같은 릴리스의 `Kkamnyang_<버전>_windows_x64.hyp` · `Kkamnyang_<버전>_linux_x64.hyp` |
 
-- **지금은 Windows x64 한 벌만 나갑니다.** macOS · Linux · arm64는 아직 없습니다.
-- 푼 폴더 안에서 처음 실행하면 그 옆에 `save/` · `logs/` · `mods/`가 생깁니다. 새 판으로 옮길 때는 새 압축본을 풀고
+- **Windows x64 · Linux x64 · Android 세 벌이 나갑니다.** macOS · PC arm64는 아직 없습니다.
+- PC판은 푼 폴더 안에서 처음 실행하면 그 옆에 `save/` · `logs/` · `mods/`가 생깁니다. 새 판으로 옮길 때는 새 압축본을 풀고
   `save/`(모드를 쓴다면 `mods/`도)를 옮겨 주면 됩니다.
+- Android판은 새 APK를 그대로 덮어 설치하면 기록이 남습니다. 가로 전체화면 · 터치 조작으로 뜨고, 모드는 쓸 수 없습니다.
+- **언어** — 한국어 · English. 게임 안 **설정 → 일반 → 언어**에서 바꿉니다.
 - **게임은 인터넷이 필요 없습니다.** 바깥에 아무것도 묻지 않고 끝까지 진행됩니다.
 
 ### 사양
 
 | | |
 |---|---|
-| 운영체제 | **Windows 10 / 11** (x64) |
+| 운영체제 | **Windows 10 / 11** (x64) · **Linux** x64 (WebKitGTK 4.1 — Ubuntu 22.04 이상 등) · **Android 8.0 이상** (arm64) |
 | 그래픽 | WebGPU 또는 WebGL2 |
-| 그 외 | Microsoft Edge WebView2 (Windows 11에는 기본으로 들어 있습니다) |
+| 그 외 | Windows는 Microsoft Edge WebView2 (Windows 11에는 기본으로 들어 있습니다) · Android는 Android System WebView |
 
 ---
 
