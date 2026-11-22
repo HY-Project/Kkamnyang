@@ -1,6 +1,6 @@
 # 깜냥 모딩 안내
 
-깜냥은 MOTP(HY Project #A-01)와 같은 모드 체계를 쓴다. 지금 게임 버전은 **`0.7.1`**이다.
+깜냥은 MOTP(HY Project #A-01)와 같은 모드 체계를 쓴다. 지금 게임 버전은 **`0.8.0`**이다.
 
 > 모드는 **설치판(HY 런처·zip)에서만** 읽힌다. 웹 버전에서는 모드를 쓸 수 없다.
 
@@ -30,7 +30,7 @@ Kkamnyang/
   "id": "your.name.my-mod",
   "name": "내 모드",
   "version": "1.0.0",
-  "gameVersion": "0.7.x",
+  "gameVersion": "0.8.x",
   "author": "이름",
   "description": "무엇을 바꾸는가",
   "entry": "main.js",
@@ -39,7 +39,7 @@ Kkamnyang/
 ```
 
 - `id`는 `[A-Za-z0-9._-]`. 같은 `id`가 둘이면 둘 다 꺼진다.
-- `gameVersion` — `"0.7.x"` · `{ "min": "0.7.0", "max": "0.7.1" }` · `"*"`. 맞지 않으면 경고하고 그래도 싣는다.
+- `gameVersion` — `"0.8.x"` · `{ "min": "0.7.0", "max": "0.8.0" }` · `"*"`. 맞지 않으면 경고하고 그래도 싣는다.
 - `entry`·`capabilities`는 코드를 싣는 Advanced 모드만(8절).
 
 ## 3. 순서와 충돌
