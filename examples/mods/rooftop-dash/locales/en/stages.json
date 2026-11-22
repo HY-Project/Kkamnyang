@@ -1,0 +1,12 @@
+{
+  "0-1": {
+    "title": "Rooftop Dash",
+    "desc": "A short practice run over the Unjongga rooftops. Human form from the start.",
+    "tips": {
+      "hello": "A modded stage. Keep running.",
+      "grapple": "See a lantern? Press K or Right Click to hook it and swing. Release with Space to launch.",
+      "grapple_touch": "Jump near a lantern and tap \"Jump\" again — when the button turns to \"Hook\", you're hooked. Tap \"Jump\" while swinging to launch.",
+      "crumble": "Cracked tiles cave in fast. Don't stop on them."
+    }
+  }
+}

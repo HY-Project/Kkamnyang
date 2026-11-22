@@ -1,0 +1,11 @@
+{
+  "id": "kkam.example.rooftop-dash",
+  "name": { "ko": "예제 — 지붕 질주", "en": "Example — Rooftop Dash" },
+  "version": "1.0.0",
+  "gameVersion": "0.7.x",
+  "author": "HY Project",
+  "description": {
+    "ko": "서장 0-1을 사람 몸으로 달리는 짧은 연습판으로 바꾸는 맵 모드 예제. 그래플 틈·무너지는 기와·들보 계단.",
+    "en": "Map mod example. Swaps Prologue 0-1 for a short human-form practice run: grapple gap, crumbling tiles, beam stairs."
+  }
+}
